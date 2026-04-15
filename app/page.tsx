@@ -68,14 +68,22 @@ export default function Home() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {/* Ecommerce */}
-              <ProjectCard title="Ecommerce" emoji="🛍️" href="#" />
+              <ProjectCard
+                title="Ecommerce"
+                emoji="🛍️"
+                href="https://ecommerce-front-back-end.vercel.app"
+              />
               {/* PET FINDER */}
-              <ProjectCard title="PET FINDER" emoji="🐾" href="#" />
+              <ProjectCard
+                title="PET FINDER"
+                emoji="🐾"
+                href="https://pet-finder-next-delta.vercel.app"
+              />
               {/* PIEDRA PAPEL Y TIJERAS */}
               <ProjectCard
                 title="PIEDRA PAPEL Y TIJERAS ONLINE"
                 emoji="✂️"
-                href="#"
+                href="https://ppt-online-next.vercel.app"
               />
             </div>
           </div>
@@ -97,6 +105,8 @@ function ProjectCard({
 }) {
   return (
     <a
+      target="_blank"
+      rel="noopener noreferrer"
       href={href}
       className="group block p-5 bg-zinc-50 dark:bg-zinc-800/70 rounded-2xl border border-zinc-200 dark:border-zinc-700 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-md transition-all duration-200"
     >
