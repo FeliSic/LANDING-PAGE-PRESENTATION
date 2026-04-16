@@ -52,6 +52,9 @@ export default function Home() {
                     "Seguridad: Autenticación con JWT (JSON Web Tokens) y NextAuth.",
                 },
                 { label: "Control de Versiones: Git / GitHub." },
+                { label: "Metodologías & Arquitectura:", isHeader: true },
+                { label: "Metodologías Ágiles: Scrum" },
+                { label: "Arquitectura MVC (Model-View-Controller)" },
               ].map(({ label, isHeader }) =>
                 isHeader ? (
                   <p
