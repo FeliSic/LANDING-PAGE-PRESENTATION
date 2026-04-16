@@ -23,23 +23,52 @@ export default function Home() {
             <h2 className="text-xl font-semibold flex items-center gap-2 border-b border-zinc-200 dark:border-zinc-700 pb-2 mb-4">
               <span className="text-2xl mr-1">🛠</span> Skills
             </h2>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-col gap-2">
               {[
-                "JavaScript",
-                "JavaScript XML",
-                "TypeScript",
-                "TypeScript XML",
-                "CSS (Tailwind / Styled Components)",
-                "React",
-                "Next Js/Ts",
-              ].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-4 py-1.5 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-800 dark:text-indigo-200 text-sm font-medium rounded-full border border-indigo-200 dark:border-indigo-800/50"
-                >
-                  {skill}
-                </span>
-              ))}
+                { label: "Frontend:", isHeader: true },
+                {
+                  label:
+                    "Frameworks: React / Next.js (Experiencia en App & Pages Router)",
+                },
+                {
+                  label:
+                    "Lenguajes: JavaScript / TypeScript (incluyendo JSX / TSX)",
+                },
+                { label: "Estilos: CSS (Tailwind CSS / Styled Components)" },
+                { label: "Consumo de datos: Fetch API / Axios" },
+                { label: "Backend & Bases de Datos:", isHeader: true },
+                {
+                  label:
+                    "APIs: Desarrollo de API RESTful (Métodos HTTP, Status Codes, JSON).",
+                },
+                { label: "ORM: Sequelize (Manejo de modelos y relaciones)." },
+                {
+                  label:
+                    "Bases de Datos: SQL & NoSQL (Consultas nativas y modelado de datos).",
+                },
+                { label: "Herramientas & Seguridad:", isHeader: true },
+                {
+                  label:
+                    "Seguridad: Autenticación con JWT (JSON Web Tokens) y NextAuth.",
+                },
+                { label: "Control de Versiones: Git / GitHub." },
+              ].map(({ label, isHeader }) =>
+                isHeader ? (
+                  <p
+                    key={label}
+                    className="mt-2 text-sm font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400"
+                  >
+                    {label}
+                  </p>
+                ) : (
+                  <span
+                    key={label}
+                    className="px-4 py-1.5 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-800 dark:text-indigo-200 text-sm font-medium rounded-full border border-indigo-200 dark:border-indigo-800/50 w-fit"
+                  >
+                    {label}
+                  </span>
+                ),
+              )}
             </div>
           </div>
 
