@@ -134,7 +134,7 @@ export default function Home() {
               <ProjectCard
                 title="PET FINDER"
                 emoji="🐾"
-                href="https://pet-finder-next-delta.vercel.app"
+                href="https://pet-finder-next-tau.vercel.app"
               />
               <ProjectCard
                 title="PIEDRA PAPEL Y TIJERAS ONLINE"
