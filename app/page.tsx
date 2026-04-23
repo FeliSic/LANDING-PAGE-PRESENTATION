@@ -141,6 +141,11 @@ export default function Home() {
                 emoji="✂️"
                 href="https://ppt-online-next.vercel.app"
               />
+              <ProjectCard
+                title="To-Do-KanBan"
+                emoji="📋"
+                href="https://to-do-kan-ban-omoh.vercel.app"
+              />
             </div>
           </div>
         </div>
