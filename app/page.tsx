@@ -9,7 +9,11 @@ export default function Home() {
               Hi, i'm Felipe!
             </h1>
             <p className="mt-3 text-lg md:text-xl text-zinc-700 dark:text-zinc-300 leading-relaxed">
-              Data Engineer en formación y Recibido en la Carrera de{" "}
+              {" "}
+              <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+                Data Engineer
+              </span>{" "}
+              en formación y Recibido en la Carrera de{" "}
               <span className="font-semibold text-indigo-600 dark:text-indigo-400">
                 Software Developer
               </span>{" "}
