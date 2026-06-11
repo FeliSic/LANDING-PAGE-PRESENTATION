@@ -11,7 +11,7 @@ export default function Home() {
             <p className="mt-3 text-lg md:text-xl text-zinc-700 dark:text-zinc-300 leading-relaxed">
               Recibido en la Carrera de{" "}
               <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-                Software Developer
+                Software Developer(completo) y Data Engineer en formación
               </span>{" "}
               en <span className="font-medium">APX.SCHOOL</span> desde
               Argentina.
@@ -32,7 +32,7 @@ export default function Home() {
                 },
                 {
                   label:
-                    "Lenguajes: JavaScript / TypeScript (incluyendo JSX / TSX)",
+                    "Lenguajes: JavaScript / TypeScript (incluyendo JSX / TSX) / Python como Interprete y Basico",
                 },
                 { label: "Estilos: CSS (Tailwind CSS / Styled Components)" },
                 { label: "Consumo de datos: Fetch API / Axios" },
@@ -145,6 +145,16 @@ export default function Home() {
                 title="To-Do-KanBan"
                 emoji="📋"
                 href="https://to-do-kan-ban-omoh.vercel.app"
+              />
+              <ProjectCard
+                title="Data-Engineering-PiPELINE-API ON TS FRONT"
+                emoji="📊"
+                href="https://data-engineering-project-sigma.vercel.app"
+              />
+              <ProjectCard
+                title="Data-Engineering-PiPELINE-API ON PY FRONT"
+                emoji="📊"
+                href="https://sp8jkkkutpckuxv4q7c39i.streamlit.app"
               />
             </div>
           </div>
